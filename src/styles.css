@@ -3,3 +3,33 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+
+@layer base {
+    body {
+        @apply min-h-screen font-mont bg-[#F3F2FF]
+    }
+}
+
+@layer components {
+    .container {
+        @apply px-8 mx-auto md:max-w-[750px] lg:max-w-[970px] xl:max-w-[1200px]
+    }
+    
+    .wrapper {
+        @apply bg-[url(./assets/images/bg.png)] bg-cover bg-center bg-no-repeat min-h-[1000px] lg:min-h-[899px] xl:min-h-[950px]
+    }
+}
+
+@layer utilities {
+    .list-item {
+        @apply relative after:absolute after:block after:h-[2px] after:-bottom-1 after:bg-black after:w-0 hover:after:w-full after:duration-500
+    }
+
+    .active {
+        @apply after:w-full
+    }
+
+    .show {
+        @apply translate-x-0 touch-none
+    }
+}

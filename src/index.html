@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Learning</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
@@ -14,7 +15,79 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body class="">
+    <div class="wrapper py-6 flex flex-col justify-between xl:pt-8">
+        <header>
+            <div class="container flex items-center justify-between">
+                <a class="logo z-50 w-28 lg:w-36 xl:w-40" href="/"><img src="./assets/images/logo.svg" alt="logo"></a>
     
+                <div class="hidden mt-4 relative lg:block lg:mt-0"><input class="bg-[#858bfd] text-white placeholder: text-sm py-2 pr-12 lg:py-2 lg:px-4 lg:pr-12  rounded-full w-52" type="text">
+                    <i class="fa-solid fa-magnifying-glass  text-[white] opacity-70 absolute top-1/2 -translate-y-1/2 right-4"></i></div>
+    
+                <nav>
+                    <div id="menu" class="z-50 relative cursor-pointer text-2xl lg:hidden"><i class="fa-solid fa-bars"></i></div>
+    
+                    <ul id="nav" class="z-40 fixed inset-0 bg-[#B0B4FF] flex flex-col items-center justify-center gap-y-6 text-xl font-semibold lg:static lg:inset-auto lg:flex-row lg:bg-transparent lg:text-base lg:gap-x-8 translate-x-full lg:translate-x-0 duration-700 ease-in-out">
+                        <li class="active list-item"><a href="/">Home</a></li>
+                        <li class="list-item"><a href="/">Info</a></li>
+                        <li class="list-item"><a href="/">Offer</a></li>
+                        <li class="list-item"><a href="/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <div class="container text-center">
+                <h1 class="font-bold text-5xl flex flex-col items-center gap-1 mb-14 lg:text-6xl xl:text-7xl">
+                    <span class="text-2xl border-b-2 border-black lg:text-3xl xl:text-4xl">Learn at home</span>
+                    E-Learning
+                </h1>
+        
+                <div class="content flex flex-col items-center gap-12 lg:justify-center lg:flex-row lg:max-w-2xl lg:mx-auto">
+                    <div class="flex flex-col gap-2 max-w-max mx-auto lg:translate-y-16 lg:min-w-max">
+                        <p>
+                            <span class="font-bold underline block">Lorem ipsum dolor sit</span>
+                            amet, consectetur adi-</p>
+                        <button class="bg-[#858bfd] hover:bg-[#6c73fb] duration-200 text-white py-2 rounded-full w-[110%] self-center ">Subscribe</button>
+                    </div>
+        
+                    <div class="mx-auto flex flex-col items-center gap-8 lg:min-w-max lg:gap-10 xl:gap-14">
+                        <img class="select-none w-full scale-110 max-w-md -translate-x-4 m-auto sm:-translate-x-8 lg:max-w-lg xl:max-w-xl" src="./assets/images/man.png" draggable="false" alt="">
+    
+                        <p class="font-semibold text-2xl border-b border-black lg:text-3xl xl:text-4xl">Online Classes</p>
+                    </div>
+        
+                    <div class="flex flex-col gap-2 max-w-max mx-auto lg:-translate-y-16 lg:min-w-max">
+                        <button class="bg-[#858bfd] hover:bg-[#6c73fb] duration-200 text-white py-2 rounded-full w-[110%] self-center">See More</button>
+                        <p>
+                            <span class="font-bold underline block">Lorem ipsum dolor sit</span>
+                            amet, consectetur adi-</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="container">
+                <ul class="flex gap-3 justify-end">
+                    <li class="w-6 h-6 text-xs flex items-center justify-center rounded-full text-white bg-black hover:bg-[#404040] duration-200 lg:text-sm lg:w-7 lg:h-7"><a href="https://dribbble.com/amrtaha23" target="_blank">
+                        <i class="fa-brands fa-dribbble"></i>
+                    </a></li>
+                    <li class="w-6 h-6 text-xs flex items-center justify-center rounded-full text-white bg-black hover:bg-[#404040] duration-200 lg:text-sm lg:w-7 lg:h-7"><a href="https://www.instagram.com/amr.taha.abdulhaleem/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                    <li class="w-6 h-6 text-xs flex items-center justify-center rounded-full text-white bg-black hover:bg-[#404040] duration-200 lg:text-sm lg:w-7 lg:h-7"><a href="/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a></li>
+                    <li class="w-6 h-6 text-xs flex items-center justify-center rounded-full text-white bg-black hover:bg-[#404040] duration-200 lg:text-sm lg:w-7 lg:h-7"><a href="/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
